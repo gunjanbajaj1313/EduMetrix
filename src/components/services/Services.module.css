@@ -1,0 +1,64 @@
+.serviceContainer {
+  width: 100vw;
+  background-color: #fae8e0;
+}
+.serviceContent {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+}
+.serviceContent h1 {
+  font-size: 5rem;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+.serviceContent h5 {
+  font-size: 1.4rem;
+  width: 70%;
+  padding-left: 40px;
+}
+.serviceHeadContainer {
+  width: 80%;
+}
+.serviceHeads {
+  display: flex;
+  /* justify-content: ; */
+}
+.serviceHeads img {
+  width: 300px;
+  position: relative;
+  left: 50px;
+}
+
+.serviceImage {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.serviceImage img {
+  height: 900px;
+  position: absolute;
+}
+.box {
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  background: #ffc72c;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .serviceImage img {
+    display: none;
+  }
+  .serviceHeads {
+    flex-direction: column;
+  }
+  .box {
+    width: 300px;
+    height: 60px;
+  }
+}

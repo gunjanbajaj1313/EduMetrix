@@ -1,0 +1,106 @@
+.projectsContainer {
+  width: 100vw;
+  /* height: 100vh; */
+}
+.projectsSection {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.projectDesc {
+  width: 65%;
+  height: 100vh;
+}
+.projectHead {
+  display: flex;
+}
+.projectDesc p {
+  margin-left: 30px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 27px;
+  font-weight: bold;
+  color: rgb(33, 127, 158);
+}
+.projectSecond {
+  width: 40%;
+  height: 100vh;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.projectSection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.projectSecond h1 {
+  font-size: 6rem;
+  color: white;
+}
+.delivery {
+  width: 330px;
+  height:200px;
+  position: absolute;
+  right: 0;
+}
+.card {
+  background: #5c9aa5;
+  width: 200px;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+}
+.grayCard {
+  background: #d3d3d3;
+  width: 200px;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 20px;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectsSection {
+    flex-direction: column-reverse;
+  }
+  .projectDesc {
+    width: 100%;
+  }
+  .projectSecond {
+    width: 100%;
+  }
+  .delivery {
+    display: none;
+  }
+  .projectSecond2 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .card {
+    width: 150px;
+    height: 70px;
+  }
+  .grayCard {
+    width: 150px;
+    height: 70px;
+  }
+  .projectDesc p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}

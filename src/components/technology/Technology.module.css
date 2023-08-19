@@ -1,0 +1,99 @@
+.techContainer {
+  width: 100%;
+  background: rgb(255, 126, 9);
+  background: linear-gradient(
+    151deg,
+    rgba(255, 126, 9, 1) 0%,
+    rgba(252, 88, 89, 1) 93%,
+    rgba(251, 85, 95, 1) 100%
+  );
+}
+.techContent {
+  /* width: 90%;
+  margin: 0px auto; */
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.techContent h1 {
+  font-size: 5rem;
+  color: white;
+  padding-top: 20px;
+}
+.techContent p {
+  font-size: 1.3rem;
+  /* width: 34%; */
+  color: white;
+}
+.ball {
+  width: 70px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+}
+.cone {
+  width: 100px;
+  position: relative;
+  right: 50px;
+  top: 100px;
+}
+.horn {
+  width: 350px;
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: -50px;
+}
+
+.techStack {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+.techBox {
+  width: 200px;
+  height: 80px;
+  background: #ffcf3e;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.col {
+  width: 1px;
+  height: 80px;
+  background: white;
+  position: relative;
+  bottom: 10px;
+  right: 35%;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  .techContent {
+    flex-direction: column;
+  }
+  .ball,
+  .cone,
+  .horn {
+    display: none;
+  }
+  .techContent h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .techContent p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .techContent h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .col {
+    right: 50%;
+  }
+}

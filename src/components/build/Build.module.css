@@ -1,0 +1,126 @@
+.buildContainer {
+  width: 100vw;
+  /* height: 100vh; */
+  background-color: #fae8e0;
+}
+.buildSection {
+  width: 100%;
+  display: flex;
+}
+.buildgirl {
+  width: 30%;
+}
+.buildgirl img {
+  width: 650px;
+  height: 700px;
+  position: relative;
+  right: 300px;
+}
+.buildContent {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.buildContent h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.buildContent h5 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.buildContent p {
+  font-size: 1rem;
+}
+.buildHeads {
+  width: 45%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buildHeads img {
+  width: 300px;
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+.buildPoints {
+  margin-top: 50px;
+}
+
+.website,
+.mobileApp,
+.customSoftware {
+  height: 100px;
+  width: 400px;
+  position: relative;
+  z-index: 2;
+}
+.website {
+  background-color: #ff0080;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+}
+.mobileApp {
+  background-color: #ffc72c;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.customSoftware {
+  background-color: orange;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .buildSection {
+    flex-direction: column;
+  }
+  .buildgirl {
+    width: 100%;
+  }
+  .buildSection img {
+    display: none;
+  }
+  .buildContent {
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .buildContent h1 {
+    font-size: 3rem;
+  }
+  .buildContent h5 {
+    font-size: 1.3rem;
+  }
+  .buildContent p {
+    font-size: 0.8rem;
+  }
+  .buildHeads {
+    width: 100%;
+  }
+  .buildHeads img {
+    display: none;
+  }
+  .website,
+  .mobileApp,
+  .customSoftware {
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,127 @@
+.portfolioContainer {
+  width: 100%;
+  background: rgb(255, 126, 9);
+  background: linear-gradient(
+    151deg,
+    rgba(255, 126, 9, 1) 0%,
+    rgba(252, 88, 89, 1) 93%,
+    rgba(251, 85, 95, 1) 100%
+  );
+}
+.portfolioSection {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.portfolioText {
+  width: 50%;
+  margin-top: 50px;
+  color: white;
+}
+.portfolioText h1 {
+  font-size: 100px;
+}
+.portfolioText p {
+  font-size: 20px;
+  margin: 20px 0px 0px 7px;
+}
+.bannerImage {
+  position: relative;
+  width: 50%;
+  margin-top: 50px;
+  z-index: 1;
+}
+.bannerImage img {
+  width: 550px;
+  transform: scaleX(-1);
+}
+.tagLineContainer {
+  position: relative;
+  width: 90%;
+  background: white;
+  height: 130px;
+  margin: -60px auto 0px auto;
+  z-index: 2;
+  border-radius: 20px;
+  bottom: 50px;
+}
+.tagLineContainer {
+  display: flex;
+}
+.logoSection {
+  width: 40%;
+}
+.logo {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+  margin-right: 10px;
+}
+.logo span {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.aboutSection {
+  width: 60%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffcf3e;
+}
+
+.rightSection {
+  display: flex;
+}
+.aboutSection span {
+  font-size: 25px;
+}
+.icon {
+  font-size: 25px;
+  position: relative;
+  right: 10px;
+  bottom: 2px;
+  color: red;
+}
+@media only screen and (max-width: 600px) {
+  .portfolioSection {
+    flex-direction: column;
+  }
+  .portfolioText {
+    width: 100%;
+  }
+  .portfolioText h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .portfolioText p {
+    text-align: center;
+  }
+  .bannerImage {
+    width: 100%;
+  }
+  .bannerImage img {
+    width: 300px;
+  }
+  .tagLineContainer {
+    height: 70px;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo span {
+    font-size: 14px;
+  }
+  .aboutSection span {
+    font-size: 15px;
+  }
+  .icon {
+    font-size: 15px;
+    right: 5px;
+  }
+}

@@ -1,0 +1,83 @@
+.aboutContainer {
+  width: 100vw;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.aboutSection {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background: #f8eee2;
+}
+.aboutLeft {
+  color: #262f70;
+  width: 40%;
+  margin: 100px;
+}
+.aboutHead {
+  display: flex;
+  align-items: center;
+}
+.aboutLeft h1 {
+  font-size: 5.4rem;
+  width: 500px;
+  margin-top: 20px;
+}
+.aboutLeft p {
+  width: 500px;
+  font-size: 22px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.logo {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.aboutRight {
+  width: 60%;
+}
+.about {
+  width: 800px;
+  height: 700px;
+  border-radius: 50% 0px 0px 50%;
+}
+
+.aboutText {
+  position: relative;
+  bottom: 20%;
+  left: 30%;
+  background: #f8eee2;
+  width: 350px;
+  height: 130px;
+  color: #262f70;
+  border-radius: 30px;
+  padding: 17px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .about {
+    display: none;
+  }
+  .aboutLeft {
+    width: 100%;
+    margin: 20px;
+  }
+  .aboutLeft h1 {
+    font-size: 2.5rem;
+    width: 400px;
+  }
+  .aboutLeft p {
+    font-size: 15px;
+    width: 350px;
+    /* text-align: center; */
+  }
+  .aboutText {
+    display: none;
+  }
+}
